@@ -1,0 +1,30 @@
+# Core dependencies
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-openai>=0.0.5
+langchain-anthropic>=0.0.1
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+pypdf>=3.17.0  # Changed from pypdf2
+python-dotenv>=1.0.0
+
+# LLM providers
+openai>=1.0.0
+anthropic>=0.8.0
+
+# Additional dependencies
+tiktoken>=0.5.0
+numpy>=1.24.0
+pydantic>=2.0.0
+
+numpy>=1.24.0
+rank-bm25>=0.2.2
+
+# For multimodal processing
+PyMuPDF>=1.23.0  # This is 'fitz'
+Pillow>=10.0.0   # This is 'PIL'
+pytesseract>=0.3.10
+opencv-python>=4.8.0  # Optional, for better image processing
+
+# Optional for table extraction
+camelot-py[cv]>=0.11.0  # For table extraction

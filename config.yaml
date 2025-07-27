@@ -1,0 +1,30 @@
+# config.yaml
+app:
+  name: "Local RAG System"
+  version: "1.0.0"
+
+retrieval:
+  chunk_size: 1000
+  chunk_overlap: 200
+  search_k: 5
+  rerank_k: 3
+  use_hybrid_search: true
+  hybrid_alpha: 0.5
+
+llm:
+  provider: "anthropic"
+  model: "claude-3-sonnet-20240229"
+  temperature: 0.7
+  max_tokens: 500
+
+embeddings:
+  model: "all-MiniLM-L6-v2"
+  use_gpu: false
+
+cache:
+  enabled: true
+  ttl_hours: 24
+
+logging:
+  level: "INFO"
+  file_path: "logs/rag.log"
